@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(236, 232, 226);
+    font-family: 'crimson pro' , serif;
+    display: grid;
+    grid-template-areas: "header"
+                         "nav"
+                         "main"
+                         "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto ;
+    gap: ;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    grid-area: header;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    padding: 10px;
+}
+
+nav {
+    grid-area: nav;
+}
+nav ul li a{
+    text-decoration: none;
+    margin-right: 30px;
+    background-color: cornflowerblue;
+    color: black;
+    padding: 1px 10px 1px 5px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+nav ul li .active {
+    background-color:blueviolet;
+}
+
+nav ul li {
+    text-decoration: none;
+    margin-right: 30px;
+    background-color: aqua;
+}
+
+main {
+    grid-area: main;
+}
+
+main #sec_quien_soy {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+main #sec_quien_soy #foto_quien_soy {
+    text-align: center;
+}
+
+main #sec_quien_soy #art_quien_soy p {
+    text-align: justify;
+}
+
+main #sec_quien_soy #art_quien_soy {
+    padding: 5px;
+}
+main #sec_quien_soy #art_quien_soy div hr {
+    width: 30%;
+    float: left;
+    margin: auto;
+}
+
+main #sec_quien_soy #art_quien_soy h3{
+   margin: auto;
+}
+
+footer {
+    grid-area: footer;
+}
