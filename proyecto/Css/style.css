@@ -7,12 +7,13 @@ body {
                          "main"
                          "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: auto ;
-    gap: ;
+    grid-template-rows: auto 5% 1fr 5% ;
+    gap: 8px;
 }
 
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     grid-area: header;
 }
@@ -22,8 +23,7 @@ nav ul {
     flex-wrap: wrap;
     justify-content: center;
     list-style: none;
-    border-top: solid 1px black;
-    border-bottom: solid 1px black;
+    border: solid 1px black;
     padding: 10px;
 }
 
@@ -44,12 +44,6 @@ nav ul li .active {
     background-color:blueviolet;
 }
 
-nav ul li {
-    text-decoration: none;
-    margin-right: 30px;
-    background-color: aqua;
-}
-
 main {
     grid-area: main;
 }
@@ -57,9 +51,11 @@ main {
 main #sec_quien_soy {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
-}
 
+}
+#sec_quien_soy article {
+    border: solid 1px;
+}
 main #sec_quien_soy #foto_quien_soy {
     text-align: center;
 }
@@ -80,7 +76,12 @@ main #sec_quien_soy #art_quien_soy div hr {
 main #sec_quien_soy #art_quien_soy h3{
    margin: auto;
 }
-
+#a_que_me_dedico {
+    background-color: #7fa7dc;
+    color:white;
+    text-align: center;
+    padding: 10px;
+}
 footer {
     grid-area: footer;
 }
